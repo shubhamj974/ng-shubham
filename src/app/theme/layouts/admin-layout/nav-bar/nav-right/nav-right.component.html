@@ -123,7 +123,7 @@
               </div>
             }
             <div>
-              <a class="dropdown-item">
+              <a class="dropdown-item" routerLink="/login" (click)="logout()">
                 <i class="text-muted" antIcon theme="outline" type="logout"></i>
                 <span>Logout</span>
               </a>
@@ -138,7 +138,7 @@
           <ng-template ngbNavContent>
             @for (task of setting; track task) {
               <div>
-                <a class="dropdown-item">
+                <a class="dropdown-item" [routerLink]="task.url">
                   <i class="text-muted" antIcon theme="outline" type="{{ task.icon }}"></i>
                   <span>{{ task.title }}</span>
                 </a>
