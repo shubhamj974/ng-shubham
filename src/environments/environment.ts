@@ -6,6 +6,7 @@ import packageInfo from '../../package.json';
 
 export const environment = {
   appVersion: packageInfo.version,
+  baseurl: `http://localhost:3000/`,
   production: false
 };
 
