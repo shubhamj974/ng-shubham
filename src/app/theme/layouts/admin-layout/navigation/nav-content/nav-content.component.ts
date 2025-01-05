@@ -28,7 +28,7 @@ import {
 @Component({
   selector: 'app-nav-content',
   standalone: true,
-  imports: [SharedModule, CommonModule, RouterModule, NavCollapseComponent, NavGroupComponent, NavItemComponent],
+  imports: [SharedModule, CommonModule, RouterModule, NavGroupComponent],
   templateUrl: './nav-content.component.html',
   styleUrls: ['./nav-content.component.scss']
 })
